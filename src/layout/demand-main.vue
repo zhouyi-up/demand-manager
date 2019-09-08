@@ -1,14 +1,8 @@
 <template>
     <Layout>
-        <Sider>
-            <demand-left/>
-        </Sider>
-        <Sider style="width: 500px">
-            <demand-center/>
-        </Sider>
-        <Sider>
-            <demand-right/>
-        </Sider>
+        <demand-left/>
+        <demand-center/>
+        <demand-right/>
     </Layout>
 </template>
 
@@ -17,7 +11,7 @@
     import DemandRight from "./demand-right";
     import DemandCenter from "./demand-center";
     export default {
-        name: "index",
+        name: "demand-main",
         components: {DemandCenter, DemandRight, DemandLeft}
     }
 </script>

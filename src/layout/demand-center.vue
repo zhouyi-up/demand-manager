@@ -1,10 +1,10 @@
 <template>
-    <div>ssss</div>
+    <router-view/>
 </template>
 
 <script>
     export default {
-        name: "main"
+        name: "demand-center"
     }
 </script>
 

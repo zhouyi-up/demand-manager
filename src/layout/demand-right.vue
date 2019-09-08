@@ -1,10 +1,10 @@
 <template>
-    <div>ssss</div>
+    <div>right sidebar</div>
 </template>
 
 <script>
     export default {
-        name: "main"
+        name: "demand-right"
     }
 </script>
 

@@ -1,10 +1,10 @@
 <template>
-    <div>ssss</div>
+    <Footer>footer</Footer>
 </template>
 
 <script>
     export default {
-        name: "main"
+        name: "demand-footer"
     }
 </script>
 
