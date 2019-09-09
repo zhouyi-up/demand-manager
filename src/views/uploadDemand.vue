@@ -16,7 +16,7 @@
             <div v-if="this.current == 1">
                 <a-row type="flex" justify="space-around" align="middle" style="height: 350px">
                     <a-col :span="10">
-                       <a-upload-dragger @change="handleChange" accept=".zip" action="http://localhost:8080">
+                       <a-upload-dragger @change="handleChange" accept=".zip" :action="uploadLink">
                            <p class="ant-upload-drag-icon">
                                <a-icon type="inbox" />
                            </p>
@@ -69,7 +69,8 @@
                     title: '完成'
                 }],
                 uploadFile:undefined,
-                fileTitle:''
+                fileTitle:'',
+                uploadLink:'http://localhost:8080'
             }
         },
         methods:{
