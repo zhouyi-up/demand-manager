@@ -20,6 +20,9 @@ const router = new VueRouter({
         children:[{
             path: '',
             component: () => import('../views/main')
+        },{
+            path: 'uploadDemand',
+            component: () => import('../views/uploadDemand')
         }]
     }]
 })

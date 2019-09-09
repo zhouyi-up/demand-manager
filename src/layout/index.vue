@@ -1,24 +1,28 @@
 <template>
-    <Layout>
-        <Sider>
-            <demand-left/>
-        </Sider>
-        <Sider style="width: 500px">
-            <demand-center/>
-        </Sider>
-        <Sider>
-            <demand-right/>
-        </Sider>
-    </Layout>
+    <div>
+        <Header>
+            <demand-header/>
+        </Header>
+        <div>
+           <a-row>
+               <a-col :span="3">
+                   <demand-left/>
+               </a-col>
+               <a-col :span="20">
+                   <demand-center/>
+               </a-col>
+           </a-row>
+        </div>
+    </div>
 </template>
 
 <script>
     import DemandLeft from "./demand-left";
-    import DemandRight from "./demand-right";
     import DemandCenter from "./demand-center";
+    import DemandHeader from "./demand-header";
     export default {
         name: "index",
-        components: {DemandCenter, DemandRight, DemandLeft}
+        components: {DemandCenter, DemandLeft,DemandHeader}
     }
 </script>
 
