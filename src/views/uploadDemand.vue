@@ -8,7 +8,7 @@
                 <a-row type="flex" justify="space-around" align="middle" style="height: 350px">
                     <a-col :span="10">
                         <a-form-item label="标题" :labelCol="{span:2}" :wrapperCol="{span:22}" :colon="false">
-                            <a-input></a-input>
+                            <a-input v-model="fileTitle"></a-input>
                         </a-form-item>
                     </a-col>
                 </a-row>
@@ -16,7 +16,7 @@
             <div v-if="this.current == 1">
                 <a-row type="flex" justify="space-around" align="middle" style="height: 350px">
                     <a-col :span="10">
-                       <a-upload-dragger @change="handleChange" accept=".zip">
+                       <a-upload-dragger @change="handleChange" accept=".zip" action="http://localhost:8080">
                            <p class="ant-upload-drag-icon">
                                <a-icon type="inbox" />
                            </p>
@@ -30,7 +30,14 @@
                 <a-row type="flex" justify="space-around" align="middle" style="height: 350px">
                     <a-col :span="10">
                        <a-card>
-                           上传成功
+                           <a-row>
+                               <a-col :span="4">标题</a-col>
+                               <a-col :span="20">{{fileTitle}}</a-col>
+                           </a-row>
+                           <a-row>
+                               <a-col :span="4">文件</a-col>
+                               <a-col :span="20">{{uploadFile}}</a-col>
+                           </a-row>
                        </a-card>
                     </a-col>
                 </a-row>
@@ -61,7 +68,8 @@
                 },{
                     title: '完成'
                 }],
-                uploadFile:undefined
+                uploadFile:undefined,
+                fileTitle:''
             }
         },
         methods:{
