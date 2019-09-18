@@ -23,6 +23,9 @@ const router = new VueRouter({
         },{
             path: 'uploadDemand',
             component: () => import('../views/uploadDemand')
+        },{
+            path: 'projectForWo',
+            component: () => import('../views/project')
         }]
     }]
 })

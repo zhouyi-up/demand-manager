@@ -1,15 +1,12 @@
 <template>
     <div class="demand-header">
         <a-row>
-            <a-col span="3">
-                <img src="../assets/index-logo.png">
+            <a-col span="3" style="line-height: 50px;text-align: center">
+                <span>需求管理系统</span>
             </a-col>
             <a-col span="20">
                 <a-menu mode="horizontal" class="menu-header">
-                    <a-menu-item>菜单</a-menu-item>
-                    <a-menu-item>菜单</a-menu-item>
-                    <a-menu-item>菜单</a-menu-item>
-                    <a-menu-item>菜单</a-menu-item>
+
                 </a-menu>
             </a-col>
         </a-row>

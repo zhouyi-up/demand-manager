@@ -1,14 +1,7 @@
 <template>
     <a-menu class="demand-menu">
         <a-menu-item @click="goPage('/main/uploadDemand')">上传</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
-        <a-menu-item>我是菜单</a-menu-item>
+        <a-menu-item @click="goPage('/main/projectForWo')">我的项目</a-menu-item>
     </a-menu>
 </template>
 
